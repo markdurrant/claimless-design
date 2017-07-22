@@ -5,7 +5,7 @@
   appearance: none;
   border: 0;
   border-radius: $br-default;
-  padding: 8px 22px 9px;
+  padding: .8rem 2.2rem .9rem;
   outline: 0;
   cursor: pointer;
   transition: background-color .25s ease-in-out;
@@ -44,15 +44,16 @@
 label {
   font-size: $ts-small;
   display: block;
+  margin-bottom: .4rem;
 }
 
 input[type=text] {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
   font-size: $ts-regular;
   appearance: none;
   border: 1px solid $ink-lightest;
-  padding: 8px 12px 9px;
+  padding: .8rem 1.2rem .9rem;
   outline: 0;
   transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
   box-shadow: 0 2px 0 0 $ink-lightest;

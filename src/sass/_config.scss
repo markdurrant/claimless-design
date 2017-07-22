@@ -16,13 +16,13 @@ $consumer-active: #0087ff;
 $consumer-light: #6dc0ff;
 
 // TYPE SIZES
-$ts-base: 16px;
+$ts-base: 10px;
 
-$ts-massive: (64 / 16 * 1rem);
-$ts-largest: (34 / 16 * 1rem);
-$ts-large: (24 / 16 * 1rem);
-$ts-regular: 1rem;
-$ts-small: (12 / 16 * 1rem);
+$ts-massive: (64 / 10 * 1rem);
+$ts-largest: (34 / 10 * 1rem);
+$ts-large: (24 / 10 * 1rem);
+$ts-regular: (16 / 10 * 1rem);
+$ts-small: (12 / 10 * 1rem);
 
 // LINE HEIGHTS
 $lh-body: 1.4;

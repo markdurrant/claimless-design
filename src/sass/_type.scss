@@ -1,3 +1,17 @@
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: $ts-regular;
+  font-weight: 400;
+  font-size: $ts-base;
+  line-height: $lh-body;
+  color: $ink-darkest;
+  -webkit-font-smoothing: antialiased;
+
+  @media (min-width: 740px) {
+    font-size: 12px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
 }
