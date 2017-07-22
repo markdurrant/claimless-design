@@ -47,7 +47,8 @@ label {
   margin-bottom: .4rem;
 }
 
-input[type=text] {
+input[type=text],
+textarea {
   width: 100%;
   margin-bottom: 1.6rem;
   font-size: $ts-regular;
