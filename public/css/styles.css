@@ -456,74 +456,146 @@ template {
   box-sizing: border-box;
 }
 
-/* line 5, src/sass/_global.scss */
+/* line 1, src/sass/_layout.scss */
 html,
 body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, src/sass/_layout.scss */
+.app-body,
+.app-footer-inner,
+.app-header-inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: 840px;
+}
+
+@media (min-width: 740px) {
+  /* line 7, src/sass/_layout.scss */
+  .app-body,
+  .app-footer-inner,
+  .app-header-inner {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* line 7, src/sass/_layout.scss */
+  .app-body,
+  .app-footer-inner,
+  .app-header-inner {
+    max-width: 1020px;
+  }
+}
+
+/* line 26, src/sass/_layout.scss */
+.app-body {
+  margin-top: 12rem;
+}
+
+/* line 1, src/sass/_type.scss */
+html {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.4;
   color: #051f36;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 1, src/sass/_type.scss */
+@media (min-width: 740px) {
+  /* line 1, src/sass/_type.scss */
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* line 1, src/sass/_type.scss */
+  html {
+    font-size: 14px;
+  }
+}
+
+/* line 19, src/sass/_type.scss */
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 26, src/sass/_type.scss */
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
 }
 
-/* line 5, src/sass/_type.scss */
+/* line 30, src/sass/_type.scss */
 h1 {
-  font-size: 4rem;
+  font-size: 6.4rem;
   color: #123b5e;
   font-weight: 900;
   line-height: 1.2;
 }
 
-/* line 12, src/sass/_type.scss */
+/* line 37, src/sass/_type.scss */
 h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
 }
 
-/* line 17, src/sass/_type.scss */
+/* line 42, src/sass/_type.scss */
 h2, h3 {
-  font-size: 2.125rem;
+  font-size: 3.4rem;
 }
 
-/* line 21, src/sass/_type.scss */
+/* line 46, src/sass/_type.scss */
 h4, h5, h6 {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 
-/* line 25, src/sass/_type.scss */
-p {
-  font-size: 1rem;
+/* line 50, src/sass/_type.scss */
+p,
+span,
+ul {
+  font-size: 1.6rem;
 }
 
-/* line 29, src/sass/_type.scss */
+/* line 56, src/sass/_type.scss */
+a {
+  color: #051f36;
+  font-weight: 600;
+  transition: color .25s ease-in-out;
+}
+
+/* line 62, src/sass/_type.scss */
 .secondary-text {
   color: #4e697f;
   font-weight: 200;
 }
 
-/* line 34, src/sass/_type.scss */
+/* line 67, src/sass/_type.scss */
 .small-text {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
 }
 
 /* line 1, src/sass/_forms.scss */
 .btn {
   color: #fff;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.6rem;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border: 0;
-  border-radius: 2px;
-  padding: 8px 22px 9px;
+  border-radius: 0.2rem;
+  padding: .8rem 2.2rem .9rem;
   outline: 0;
   cursor: pointer;
   transition: background-color .25s ease-in-out;
@@ -564,33 +636,34 @@ p {
 
 /* line 44, src/sass/_forms.scss */
 label {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   display: block;
+  margin-bottom: .4rem;
 }
 
-/* line 49, src/sass/_forms.scss */
+/* line 50, src/sass/_forms.scss */
 input[type=text] {
   width: 100%;
-  margin-bottom: 16px;
-  font-size: 1rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border: 1px solid #d2d8de;
-  padding: 8px 12px 9px;
+  padding: .8rem 1.2rem .9rem;
   outline: 0;
   transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
   box-shadow: 0 2px 0 0 #d2d8de;
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 
-/* line 61, src/sass/_forms.scss */
+/* line 62, src/sass/_forms.scss */
 input[type=text]:hover, input[type=text]:focus {
   border-color: #97a6b4;
   box-shadow: 0 5px 0 0 #97a6b4;
 }
 
-/* line 67, src/sass/_forms.scss */
+/* line 68, src/sass/_forms.scss */
 input[type=text]::-webkit-input-placeholder {
   color: #97a6b4;
   font-weight: 200;
@@ -604,26 +677,85 @@ input[type=text]::placeholder {
   font-weight: 200;
 }
 
-/* line 72, src/sass/_forms.scss */
+/* line 73, src/sass/_forms.scss */
 .stl-insurer input[type=text] {
   border-bottom-color: #6ed468;
   box-shadow: 0 2px 0 0 #6ed468;
 }
 
-/* line 76, src/sass/_forms.scss */
+/* line 77, src/sass/_forms.scss */
 .stl-insurer input[type=text]:hover, .stl-insurer input[type=text]:focus {
   border-bottom-color: #06ce40;
   box-shadow: 0 5px 0 0 #06ce40;
 }
 
-/* line 83, src/sass/_forms.scss */
+/* line 84, src/sass/_forms.scss */
 .stl-consumer input[type=text] {
   border-bottom-color: #35a9ff;
   box-shadow: 0 2px 0 0 #35a9ff;
 }
 
-/* line 87, src/sass/_forms.scss */
+/* line 88, src/sass/_forms.scss */
 .stl-consumer input[type=text]:hover, .stl-consumer input[type=text]:focus {
   border-bottom-color: #0087ff;
   box-shadow: 0 5px 0 0 #0087ff;
+}
+
+/* line 1, src/sass/_header.scss */
+.app-header {
+  background: #123b5e;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* line 8, src/sass/_header.scss */
+.header-logo {
+  color: #fff;
+  margin: 1.4rem 0;
+  height: 4rem;
+  font-size: 3.4rem;
+}
+
+/* line 1, src/sass/_footer.scss */
+.app-footer {
+  background: #f4f5f7;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+/* line 8, src/sass/_footer.scss */
+.app-footer span {
+  font-size: 1.2rem;
+  color: #97a6b4;
+}
+
+/* line 13, src/sass/_footer.scss */
+.app-footer a {
+  color: #4e697f;
+}
+
+/* line 16, src/sass/_footer.scss */
+.app-footer a:hover, .app-footer a:focus {
+  color: #123b5e;
+}
+
+/* line 23, src/sass/_footer.scss */
+.hackathon-copy {
+  display: block;
+  margin-bottom: 1.8rem;
+}
+
+/* line 28, src/sass/_footer.scss */
+.created-with {
+  display: block;
+  margin-bottom: -.2rem;
+}
+
+/* line 33, src/sass/_footer.scss */
+.team-members li {
+  display: inline-block;
+  margin-right: 1rem;
 }
