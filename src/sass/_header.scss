@@ -1,0 +1,13 @@
+.app-header {
+  background: $ink-dark;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header-logo {
+  color: $white;
+  margin: 1.4rem 0;
+  height: 4rem;
+  font-size: $ts-largest;
+}
