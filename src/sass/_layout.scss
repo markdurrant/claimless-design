@@ -6,7 +6,8 @@ body {
 
 .app-body,
 .app-footer-inner,
-.app-header-inner {
+.app-header-inner,
+.app-nav-inner {
   margin-left: auto;
   margin-right: auto;
   padding-left: 3rem;
@@ -24,5 +25,5 @@ body {
 }
 
 .app-body {
-  margin-top: 12rem;
+  margin-top: 18rem;
 }
