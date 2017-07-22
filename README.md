@@ -1,6 +1,6 @@
-# Base Gulp project
+# Design for #BreakTheBlock Hackathon project 'Claimless'
 
-A basic [Gulp](http://gulpjs.com/) project. Includes [Sass](http://sass-lang.com/) compilation, JS linting and concatenation, and [Browsersync](https://www.browsersync.io/)
+Based on basic [Gulp](http://gulpjs.com/) project. Includes [Sass](http://sass-lang.com/) compilation, JS linting and concatenation, and [Browsersync](https://www.browsersync.io/)
 
 #### Install
 
@@ -8,7 +8,7 @@ Install Gulp globally
 
     $ npm i -g gulp
 
-Install local dependencies 
+Install local dependencies
 
     $ npm i
 
