@@ -10,7 +10,16 @@ body {
   margin-right: auto;
   padding-left: 3rem;
   padding-right: 3rem;
-  max-width: 760px;
+  max-width: 840px;
+
+  @media (min-width: 740px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1020px;
+  }
 }
 
 .app-body {
