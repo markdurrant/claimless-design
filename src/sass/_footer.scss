@@ -1,0 +1,36 @@
+.app-footer {
+  background: mix(white, $ink-lightest, 75%);
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  margin-top: 8rem;
+  text-align: center;
+
+  span {
+    font-size: $ts-small;
+    color: $ink-light;
+  }
+
+  a {
+    color: $ink-mid;
+
+    &:hover,
+    &:focus {
+      color: $ink-dark;
+    }
+  }
+}
+
+.hackathon-copy {
+  display: block;
+  margin-bottom: 1.8rem;
+}
+
+.created-with {
+  display: block;
+  margin-bottom: -.2rem;
+}
+
+.team-members li {
+  display: inline-block;
+  margin-right: 1rem;
+}

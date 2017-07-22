@@ -1,8 +1,18 @@
-.app-body {
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-body,
+.app-footer-inner {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4rem;
   padding-left: 3rem;
   padding-right: 3rem;
   max-width: 760px;
+}
+
+.app-body {
+  margin-top: 4rem;
 }

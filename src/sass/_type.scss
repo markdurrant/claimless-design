@@ -12,6 +12,13 @@ html {
   }
 }
 
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
 }
@@ -36,8 +43,16 @@ h4, h5, h6 {
   font-size: $ts-large;
 }
 
-p {
+p,
+span,
+ul {
   font-size: $ts-regular;
+}
+
+a {
+  color: $ink-darkest;
+  font-weight: 600;
+  transition: color .25s ease-in-out;
 }
 
 .secondary-text {
