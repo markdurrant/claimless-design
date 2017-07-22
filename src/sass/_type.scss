@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: $ts-massive;
+  color: $ink-dark;
+  font-weight: 900;
+  line-height: $lh-headline;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: $lh-headline;
+}
+
+h2, h3 {
+  font-size: $ts-largest;
+}
+
+h4, h5, h6 {
+  font-size: $ts-large;
+}
+
+p {
+  font-size: $ts-regular;
+}
+
+.secondary-text {
+  color: $ink-mid;
+  font-weight: 200;
+}
+
+.small-text {
+  font-size: $ts-small;
+}

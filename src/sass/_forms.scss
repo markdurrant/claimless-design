@@ -1,0 +1,95 @@
+.btn {
+  margin-right: 10px; // temp
+  margin-bottom: 10px; // temp
+  color: $white;
+  font-weight: 600;
+  font-size: $ts-regular;
+  appearance: none;
+  border: 0;
+  border-radius: $br-default;
+  padding: 8px 22px 9px;
+  outline: 0;
+  cursor: pointer;
+  transition: background-color .25s ease-in-out;
+  background-color: $ink-mid;
+
+  &:hover,
+  &:focus {
+    background-color: $ink-dark;
+  }
+
+  &.btn-disabled {
+    background-color: $ink-lightest;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .stl-insurer & {
+    background-color: $insurer;
+
+    &:hover,
+    &:focus {
+      background-color: $insurer-active;
+    }
+  }
+
+  .stl-consumer & {
+    background-color: $consumer;
+
+    &:hover,
+    &:focus {
+      background-color: $consumer-active;
+    }
+  }
+}
+
+label {
+  font-size: $ts-small;
+  display: block;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: $ts-regular;
+  appearance: none;
+  border: 1px solid $ink-lightest;
+  padding: 8px 12px 9px;
+  outline: 0;
+  transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+  box-shadow: 0 2px 0 0 $ink-lightest;
+  border-radius: $br-default;
+
+  &:hover,
+  &:focus {
+    border-color: $ink-light;
+    box-shadow: 0 5px 0 0 $ink-light;
+  }
+
+  &::placeholder {
+    color: $ink-light;
+    font-weight: 200;
+  }
+
+  .stl-insurer & {
+    border-bottom-color: $insurer;
+    box-shadow: 0 2px 0 0 $insurer;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $insurer-active;
+      box-shadow: 0 5px 0 0 $insurer-active;
+    }
+  }
+
+  .stl-consumer & {
+    border-bottom-color: $consumer;
+    box-shadow: 0 2px 0 0 $consumer;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $consumer-active;
+      box-shadow: 0 5px 0 0 $consumer-active;
+    }
+  }
+}

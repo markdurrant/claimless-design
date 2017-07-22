@@ -1,0 +1,14 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: $ts-regular;
+  font-weight: 400;
+  font-size: $ts-base;
+  line-height: $lh-body;
+  color: $ink-darkest;
+  -webkit-font-smoothing: antialiased;
+}
