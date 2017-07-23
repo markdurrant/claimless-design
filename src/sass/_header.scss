@@ -4,11 +4,24 @@
   width: 100%;
   top: 0;
   z-index: 1;
+
+  .stl-insurer & {
+    background-color: $insurer;
+  }
+
+  .stl-consumer & {
+    background-color: $consumer;
+  }
 }
 
 .header-logo {
-  color: $white;
   margin: 1.4rem 0;
   height: 4rem;
   font-size: $ts-largest;
+
+  a {
+    color: $white;
+    font-weight: 900;
+    text-decoration: none;
+  }
 }

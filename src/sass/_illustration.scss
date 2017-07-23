@@ -32,7 +32,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2rem;
-  background-image: url('/assets/icon-policy.svg');
+  background-image: url('/images/icon-policy.svg');
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -47,14 +47,14 @@
   animation-delay: .2s;
 
   &.new {
-    background-image: url('/assets/icon-new.svg');
+    background-image: url('/images/icon-new.svg');
   }
 
   &.claim {
-    background-image: url('/assets/icon-claim.svg');
+    background-image: url('/images/icon-claim.svg');
   }
 
   &.cancel {
-    background-image: url('/assets/icon-cancel.svg');
+    background-image: url('/images/icon-cancel.svg');
   }
 }
