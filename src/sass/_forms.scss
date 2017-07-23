@@ -1,44 +1,7 @@
-.btn {
-  color: $white;
-  font-weight: 600;
-  font-size: $ts-regular;
-  appearance: none;
+fieldset {
   border: 0;
-  border-radius: $br-default;
-  padding: .8rem 2.2rem .9rem;
-  outline: 0;
-  cursor: pointer;
-  transition: background-color .25s ease-in-out;
-  background-color: $ink-mid;
-
-  &:hover,
-  &:focus {
-    background-color: $ink-dark;
-  }
-
-  &.btn-disabled {
-    background-color: $ink-lightest;
-    cursor: default;
-    pointer-events: none;
-  }
-
-  .stl-insurer & {
-    background-color: $insurer;
-
-    &:hover,
-    &:focus {
-      background-color: $insurer-active;
-    }
-  }
-
-  .stl-consumer & {
-    background-color: $consumer;
-
-    &:hover,
-    &:focus {
-      background-color: $consumer-active;
-    }
-  }
+  margin: 0;
+  padding: 0;
 }
 
 label {
@@ -90,6 +53,50 @@ textarea {
     &:focus {
       border-bottom-color: $consumer-active;
       box-shadow: 0 5px 0 0 $consumer-active;
+    }
+  }
+}
+
+button,
+.btn {
+  color: $white;
+  font-weight: 600;
+  font-size: $ts-regular;
+  appearance: none;
+  border: 0;
+  border-radius: $br-default;
+  padding: .8rem 2.2rem .9rem;
+  outline: 0;
+  cursor: pointer;
+  transition: background-color .25s ease-in-out;
+  background-color: $ink-mid;
+
+  &:hover,
+  &:focus {
+    background-color: $ink-dark;
+  }
+
+  &.btn-disabled {
+    background-color: $ink-lightest;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .stl-insurer & {
+    background-color: $insurer;
+
+    &:hover,
+    &:focus {
+      background-color: $insurer-active;
+    }
+  }
+
+  .stl-consumer & {
+    background-color: $consumer;
+
+    &:hover,
+    &:focus {
+      background-color: $consumer-active;
     }
   }
 }
